@@ -25,7 +25,7 @@ import com.talkortell.bbs.base.utils.SpringContextUtil;
 @EnableEurekaClient
 @EnableZuulProxy
 @EnableFeignClients(basePackages= {"com.talkortell.bbs.apigate.reference.feign"})
-public class WebApplication {
+public class ApigateWebApplication {
 	
 	@Bean
 	public HttpMessageConverters fastJsonHttpMessageConverters() {
@@ -47,6 +47,6 @@ public class WebApplication {
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(WebApplication.class, args);
+		SpringApplication.run(ApigateWebApplication.class, args);
 	}
 }
